@@ -10,10 +10,10 @@ pygments: true
 #
 title : 狂飙蜗牛
 tagline: Site Tagline
-author : 刘兴
+author :
   name : Shane lau
   email : shanelau1021@gmail.com
-  github : kissliux
+  github : username
   twitter : username
   feedburner : feedname
 
@@ -25,7 +25,7 @@ author : 刘兴
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://kissliux.github.io
+production_url : http://username.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #

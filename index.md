@@ -7,6 +7,7 @@ tagline: Supporting tagline
 
 ## hello 我是刘兴，
 原谅我一生放荡不羁的笑点
+![lf]("assets/images/lf.png");
 
 <ul class="posts">
   {% for post in site.posts %}

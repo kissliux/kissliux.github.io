@@ -5,7 +5,7 @@ meta:
     absolute_baseurl: http://kissliux.github.io/
     domain: kissliux.github.io
     author:
-        full_name: 刘 兴
+        full_name: 刘兴
         short_name: shane
         name: shane
         email: kissliux@qq.com
@@ -29,7 +29,6 @@ permalink: /blog/:year/:month/:day/:title
 
 disqus_short_name: shaneLau
 
-      
 css:
     - css/screen.css
 

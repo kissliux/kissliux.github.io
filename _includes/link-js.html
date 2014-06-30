@@ -4,7 +4,7 @@
 
             jq('.posts a').each(function(index,element){
                 var href = jq(this).attr('href');
-                if(href.indexOf('#') == 0){
+                if(href && href.indexOf('#') == 0){
                 }else if ( href.indexOf('/') == 0 || href.toLowerCase().indexOf('kissliux.github.io')>-1 ){
                 }else{
                     jq(this).attr('target','_blank');

@@ -16,14 +16,6 @@ baseurl: /
 
 markdown: kramdown
 
-# markdown: maruku
-# maruku:
-#   use_divs: true
-#    use_tex: true
-#    png_engine : blahtex
-#    png_dir    : images/latex/
-#    png_url    : /images/latex/
-
 pygments: false
 permalink: /blog/:year/:month/:day/:title
 

@@ -76,8 +76,10 @@
         {{ content }}
       </div>
 
-    </div>
-
+    
+    {% include JB/analytics %}
+    {% include JB/comments %}
+  </div>
     <div id="footer">
       <div class="container">
         <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}
@@ -87,8 +89,7 @@
       </div>
     </div id="footer">
 
-    {% include JB/analytics %}
-    {% include JB/comments %}
+
 
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
     <!-- Placed at the end of the document so the pages load faster -->

@@ -31,3 +31,4 @@ date: 2014-06-30
 ## 如果你想搭个人博客，有什么不懂的，可以给我发邮件：shanelau1021@gmail.com
 
 
+!()[/images/avatar.jpg]

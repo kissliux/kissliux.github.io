@@ -44,3 +44,20 @@
     <hr>
   </div>
 </div>
+	<div id="comments">
+        	    <div id="SOHUCS"></div>
+       </div>
+<script>
+  (function(){
+    var appid = 'cyrfr7Vi1',
+    conf = 'prod_a32f5b2527a0e8b4731bc7cfa2abb265';
+    var doc = document,
+    s = doc.createElement('script'),
+    h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+    s.type = 'text/javascript';
+    s.charset = 'utf-8';
+    s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+    h.insertBefore(s,h.firstChild);
+    window.SCS_NO_IFRAME = true;
+  })()
+</script>    

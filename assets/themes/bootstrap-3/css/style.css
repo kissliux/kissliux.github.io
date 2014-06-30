@@ -77,3 +77,10 @@ h1, h2, h3, h4 {
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+  /*add by liuxing*/
+#col-organic-c138{
+	display: none;
+}
+#comments{
+	max-width:700px;
+}

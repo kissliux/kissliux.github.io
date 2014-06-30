@@ -75,13 +75,14 @@
       <div class="container">
         {{ content }}
       </div>
-
+		<div id="comments">
         {% include JB/comments %}
+       </div>
   </div>
     <div id="footer">
       <div class="container">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}        
-          create and build all the love in world by <a href="">liuxing</a>
+        <p>&copy; {{ site.time | date: '%Y' }}     
+          Create and build all the love in world by <a href="">{{ site.author.name }}</a>
           </p>
       </div>
     </div id="footer">

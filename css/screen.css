@@ -4,7 +4,7 @@ padding:0;
 }
 
 body {
-	background-color:#162e41;
+	background-color:#313131;
 font:14px/1.75em georgia, serif;
 }
 
@@ -135,15 +135,13 @@ position:relative;
 
 
 section.site > section.content nav.page-navigation  a {
-border-bottom:1px dashed #666;
-color:#DDD;
+color:#fff;
 font:12px tahoma;
 padding:.25em;
 }
 
 section.site > section.content nav.page-navigation  a:hover {
-border-bottom:1px dashed #BFEFFF;
-color:#C0FF3E;
+color:#fff;
 font:12px tahoma;
 padding:.25em;
 }
@@ -153,8 +151,8 @@ a.left {float:left}
 a.right {float:right}
 
 aside.sidebar {
-background-color:#528B8B;
-color:#FFF;
+background-color:#fff;
+color:#333;
 font-family:sans-serif,SimSun,YouYuan,arial;
 margin:.5em 0;
 padding:0 .25em .25em 0;
@@ -170,19 +168,16 @@ margin:1em 1.5em 2em;
 }
 
 aside.sidebar section a {
-border-bottom:1px dashed #87CEEB;
-color:solid;
+color:#333;
 font-family:serif,sans-serif,SimSun,arial;
 }
 
 aside.sidebar section a:hover {
-border-bottom:1px dashed #7CFC00;
-color:#DDF;
+color:#333;
 }
 
 aside.sidebar section h3 {
-
-color:#00CDCD;
+color:#333;
 font-family:Microsoft YaHei, SimSun,YouYuan,arial;
 font-size:1.325em;
 font-weight:700;
@@ -379,7 +374,7 @@ margin:1em 0;
 }
 
 p.excerpt a {
-border-bottom:1px dashed;
+	color:#333;
 font-family:Georgia, sans-serif,serif, Arial;
 font-weight:700;
 }

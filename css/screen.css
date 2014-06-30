@@ -298,7 +298,6 @@ font-size:%80;
 }
 
 a {
-border-bottom:1px solid #ccc;
 text-decoration:none;
 }
 
@@ -310,8 +309,7 @@ align:center;
 }
 
 a:hover {
-border-bottom:1px solid #66a;
-color:#33f;
+color:#000099;
 }
 
 a:link,a:visited {
@@ -362,7 +360,7 @@ margin-bottom:.5em;
 }
 
 html {
-background-color:#162e41;
+background-color:#313131;
 }
 
 html,body {

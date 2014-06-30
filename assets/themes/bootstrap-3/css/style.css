@@ -18,7 +18,8 @@ h1, h2, h3, h4 {
   color: #f22430;
 }
 #footer {
-  background-color: #fdcd60;
+  background-color: #000;
+  color:#fff;
 }
 
 
@@ -83,4 +84,8 @@ h1, h2, h3, h4 {
 }
 #comments{
 	max-width:700px;
+}
+.container img{
+	max-width:100%;
+	height:auto;	
 }

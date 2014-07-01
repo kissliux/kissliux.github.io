@@ -15,9 +15,9 @@ date: 2014-07-01
 
 #使用方式
 
-```
+{% highlight javascript %}
 	git clone https://github.com/kissliux/html-front-template.git
-```
+{% endhighlight %}
 
 
 #前端技术
@@ -33,12 +33,12 @@ date: 2014-07-01
 
 
 ## grunt任务：
-```
+{% highlight javascript %}
    grunt.registerTask('default', ['less','cssmin','uglify','copy']);
     //执行 grunt bundle --最终输出的文件 < name-生成日期.zip > 文件
     grunt.registerTask('bundle', ['clean:pre','less:development','copy:images', 'copy:main','cssmin','copy:archive', 'clean:post','htmlmin','compress',]);
     
- ```
+{% endhighlight %}
  
  * clean 清理文档格式
  * less 编译成css
@@ -51,7 +51,8 @@ date: 2014-07-01
 
 #文档结构  
 
-```
+{% endhighlight %}
+
 ├── Gruntfile.js   //任务配置
 ├── assets			//静态资源
 │   ├── css			
@@ -73,7 +74,7 @@ date: 2014-07-01
 ├── index.html		//主页
 └── package.json	
 
-```
+{% endhighlight %}
 
 #Development
 安装依赖

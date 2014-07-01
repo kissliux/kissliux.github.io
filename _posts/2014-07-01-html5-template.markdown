@@ -51,7 +51,7 @@ date: 2014-07-01
 
 #文档结构  
 
-{% endhighlight %}
+{% highlight javascript %}
 
 ├── Gruntfile.js   //任务配置
 ├── assets			//静态资源
@@ -79,17 +79,17 @@ date: 2014-07-01
 #Development
 安装依赖
 
-```
+{% highlight javascript %}
+
 npm install
 bower install
 
-```
 打包发布
 
-```
+
 grunt
 
-```
+{% endhighlight %}
 
 
 

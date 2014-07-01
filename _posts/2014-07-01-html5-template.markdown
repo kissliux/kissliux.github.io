@@ -9,8 +9,6 @@ date: 2014-07-01
 ---
 
 
-
-
 #简介
 前端开发模板，自动化任务管理。html5 development template, auto task manager
 

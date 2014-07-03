@@ -372,13 +372,13 @@ margin:1em 0;
 }
 
 p.excerpt a {
-	color:#ccc;
+	color:#eee;
 font-family:Georgia, sans-serif,serif, Arial;
 font-weight:700;
 }
 
 p.excerpt a:hover {
-color:#ddd;
+color:#fff;
 }
 
 

@@ -16,7 +16,7 @@ baseurl: /
 
 markdown: kramdown
 
-pygments: true
+pygments: false
 
 permalink: /blog/:year/:month/:day/:title
 

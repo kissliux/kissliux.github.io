@@ -7,7 +7,6 @@ body {
 	background-color:#313131;
 font:14px/1.75em georgia, serif;
 }
-
 article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {
 	border:0;
 font:inherit;
@@ -125,7 +124,7 @@ color: #ddd;
 }
 
 section.site > section.content nav.page-navigation {
-background-color:#0d0;
+background-color:#444;
 text-align: center;
 margin:1em 0;
 min-height:2em;

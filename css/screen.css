@@ -372,13 +372,13 @@ margin:1em 0;
 }
 
 p.excerpt a {
-	color:#333;
+	color:#ccc;
 font-family:Georgia, sans-serif,serif, Arial;
 font-weight:700;
 }
 
 p.excerpt a:hover {
-color:#000;
+color:#ddd;
 }
 
 
@@ -530,4 +530,10 @@ ul#thumbs{
 	text-align: center;
 	margin: 1em 0px;
 	position: relative;
+}
+..pagination a{
+	color: #0f0;
+}
+.pagination a:hover{
+	color:#FF0;
 }

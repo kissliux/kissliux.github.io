@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "笔戈360云盘文件使用规范"
-tags: develop
+tags: Development
 comment: true
 published: true
 date: 2014-07-03
@@ -17,9 +17,10 @@ date: 2014-07-03
 
 ##规范
 ###  文档结构
+
 根目录
 
-{% highlight javascript %}
+{% highlight linenos javascript %}
 
 ├── 项目		//每有一个新项目，则在此目录新建
 │   ├── 笔戈博客		//博客项目
@@ -43,6 +44,8 @@ date: 2014-07-03
 
 
 {% endhighlight %}
+
+
 ### 目录规范
 *  建立个人文件夹，此目录不需要遵循规范。
 *  项目文件夹， 包含开发文档、设计图等内容
@@ -51,3 +54,6 @@ date: 2014-07-03
 ### 命名规范
 * 文件及文件夹: 全部中文、英文小写字母+数字或连接符"- , _ "，不可出现其他字符
 * 文件名，务必见名知意。 如index-bg.jpg  表示主页背景图，logo.jpg表示logo等等  
+
+## 有任何不合理，或者更加好的建议，请留言吧，或者直接跟我说
+

@@ -531,9 +531,13 @@ ul#thumbs{
 	margin: 1em 0px;
 	position: relative;
 }
-.pagination a{
+.pagination a,.tags li a{
 	color: #0f0;
 }
-.pagination a:hover{
+.pagination a:hover,.tags li a:hover{
 	color:#FF0;
 }
+pre{
+	background-color: #333;
+}
+

@@ -563,4 +563,6 @@ ul#thumbs{
 pre{
 	background-color: #333;
 }
-
+.detail{
+	text-indent: 0;
+}

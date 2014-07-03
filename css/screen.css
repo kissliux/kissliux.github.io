@@ -119,8 +119,9 @@ border-radius:8px;
 }
 
 section.site > section.content article,section.comments {
-background-color:#f8f8f8;
+background-color:#444;
 padding:1.5em 2em;
+color: #ddd;
 }
 
 section.site > section.content nav.page-navigation {
@@ -153,7 +154,7 @@ aside.sidebar {
 background-color:#fff;
 color:#333;
 font-family:sans-serif,SimSun,YouYuan,arial;
-margin:.5em 0;
+margin:3.5em 0;
 padding:0 .25em .25em 0;
 position:absolute;
 right:0;
@@ -529,4 +530,20 @@ ul#thumbs{
 	text-align: center;
 	margin: 1em 0px;
 	position: relative;
+}
+
+pre > code, .highlight {
+padding: 10px 0;
+width: 100%;
+overflow: auto;
+}
+pre > code, .highlight, p > pre, p > code, p > nobr > code, li > code, h5 > code, .note > code {
+background-color: #333;
+color: #fff;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+-webkit-box-shadow: inset 0 1px 10px rgba(0,0,0,.3),0 1px 0 rgba(255,255,255,.1),0 -1px 0 rgba(0,0,0,.5);
+-moz-box-shadow: inset 0 1px 10px rgba(0,0,0,.3),0 1px 0 rgba(255,255,255,.1),0 -1px 0 rgba(0,0,0,.5);
+box-shadow: inset 0 1px 10px rgba(0,0,0,.3),0 1px 0 rgba(255,255,255,.1),0 -1px 0 rgba(0,0,0,.5);
 }

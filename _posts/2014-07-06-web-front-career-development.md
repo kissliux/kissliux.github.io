@@ -8,7 +8,7 @@ date: 2014-07-06
 ---
 
 
-#  WEB前端技术之路（一） 知识架构
+#  （转）WEB前端技术之路（一） 知识架构
 
 >“滚滚长江东逝水，浪花淘尽英雄；是非成败转头空，古今多少事，都付笑谈中。”
 
@@ -23,7 +23,7 @@ date: 2014-07-06
 
 ## WEB前端技术知识架构：
 >“Smilin`in The End, FindYour Own Way Home” —REO Speedwagon
-![web前端路线图](../images/web_roadmap.jpg)  
+![web前端路线图](/images/web_roadmap.jpg)  
 
 这只是W3C一场演讲（0910how-fast）PPT里阐述的WEB技术Architecture，这里头纷繁复杂的技术并非WEB前端技术的全貌，充其量算是前端技术的基础。但是，就算是基础，也已经足以诠释WEB前端技术的复杂性了，如果我们一头扎进这纷繁复杂的技术海洋中去，离上岸将是遥遥无期。我个人的建议是：关键知识深度掌握！  
 

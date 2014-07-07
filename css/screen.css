@@ -2,7 +2,9 @@
 margin:0;
 padding:0;
 }
-
+article a{
+color: #0f0;
+	}
 body {
 	background-color:#313131;
 font:14px/1.75em georgia, serif;

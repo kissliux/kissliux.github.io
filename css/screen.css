@@ -76,7 +76,10 @@ position: relative;
 margin:2.5em 0 1em;
 width:50em;
 }
-
+article .post{
+	width: 95%;
+	height: auto;
+}
 section.site > section.content > article > blockquote {
 border-left:4px solid #999;
 font-style:italic;

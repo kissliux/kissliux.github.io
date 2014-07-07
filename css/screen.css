@@ -344,11 +344,13 @@ h1,h2,h3,h4,h5,h6 {
 font-family:Microsoft YaHei,tahoma, serif;
 font-size:100%;
 font-weight:400;
+color: #fff;
 }
 
 h2 {
 font-size:135%;
 margin-bottom:.5em;
+color: #fff;
 }
 
 h2.title {
@@ -429,7 +431,6 @@ section#weibo {
 border-radius:8px;
 text-align:center;
 }
-
 
 section.content article p.excerpt {
 text-indent:0;

@@ -574,7 +574,7 @@ p.detail{
 		position: static;
 		width: 100%;
 		height: 200px;
-		margin: 0;
+		margin: 2em 0;
 		padding: 0;
 	}
 	aside.sidebar section img.block {
@@ -592,7 +592,7 @@ p.detail{
 	#tags,#links{
 		display: none;
 	}
-	section.site > header,section.site > section.content{
+	section.site > footer,section.site > header,section.site > section.content{
 		width: 100%;
 	}
 	section.site > header{

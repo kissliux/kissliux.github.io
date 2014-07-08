@@ -599,7 +599,10 @@ p.detail{
 		width: 100%;
 	}
 	section.site > header{
-		padding: 0 1em;
+
+		padding: 0;
+		padding-left: 1em;
+
 	}
 
 	span#copyright, span#poweredby {
@@ -607,6 +610,9 @@ p.detail{
 	}
 	.more a{
 padding: 1px 12px;
+	}
+	section.site > header h2{
+		clear: left;
 	}
 
 }

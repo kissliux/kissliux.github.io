@@ -581,10 +581,13 @@ p.detail{
 		float: left;
 		width: 30%;
 	}
+	aside.sidebar section{
+		padding-left: 1em;
+	}
 	.sidebar section p{
-		width: 67%;
+		width: 65%;
 		float: left;
-		padding: 0 1px;
+		padding-left:7px;
 	}
 	section.site {
 		width: 100%;
@@ -596,7 +599,7 @@ p.detail{
 		width: 100%;
 	}
 	section.site > header{
-		padding: 0;
+		padding: 0 1em;
 	}
 
 }

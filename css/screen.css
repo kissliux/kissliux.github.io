@@ -573,21 +573,30 @@ p.detail{
 	aside.sidebar{
 		position: static;
 		width: 100%;
+		height: 200px;
+		margin: 0;
+		padding: 0;
 	}
 	aside.sidebar section img.block {
 		float: left;
 		width: 30%;
 	}
 	.sidebar section p{
-		width: 30%;
+		width: 67%;
 		float: left;
-		padding: 0 2em;
+		padding: 0 1px;
 	}
 	section.site {
 		width: 100%;
 	}
 	#tags,#links{
 		display: none;
+	}
+	section.site > header,section.site > section.content{
+		width: 100%;
+	}
+	section.site > header{
+		padding: 0;
 	}
 
 }

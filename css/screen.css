@@ -583,5 +583,11 @@ p.detail{
 		float: left;
 		padding: 0 2em;
 	}
+	section.site {
+		width: 100%;
+	}
+	#tags,#links{
+		display: none;
+	}
 
 }

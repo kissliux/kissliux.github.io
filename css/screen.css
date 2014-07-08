@@ -602,4 +602,8 @@ p.detail{
 		padding: 0 1em;
 	}
 
+	span#copyright, span#poweredby {
+			padding: 0 10px;
+	}
+
 }

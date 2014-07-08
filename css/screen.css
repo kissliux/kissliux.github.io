@@ -605,5 +605,8 @@ p.detail{
 	span#copyright, span#poweredby {
 			padding: 0 10px;
 	}
+	.more a{
+padding: 1px 12px;
+	}
 
 }

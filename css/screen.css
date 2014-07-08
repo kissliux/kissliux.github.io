@@ -569,3 +569,19 @@ pre{
 p.detail{
 	text-indent: 0 !important;
 }
+@media screen and (max-width: 48em) {
+	aside.sidebar{
+		position: static;
+		width: 100%;
+	}
+	aside.sidebar section img.block {
+		float: left;
+		width: 30%;
+	}
+	.sidebar section p{
+		width: 30%;
+		float: left;
+		padding: 0 2em;
+	}
+
+}

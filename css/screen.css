@@ -599,9 +599,7 @@ p.detail{
 		width: 100%;
 	}
 	section.site > header{
-
 		padding: 0;
-		padding-left: 1em;
 
 	}
 
@@ -614,5 +612,7 @@ padding: 1px 12px;
 	section.site > header h2{
 		clear: left;
 	}
-
+section.site > header h1 ,section.site > header h2{
+	padding-left: 1em;
+}
 }

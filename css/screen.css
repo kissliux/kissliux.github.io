@@ -6,7 +6,7 @@ article a{
 color: #0f0;
 	}
 body {
-	background-color:#313131;
+	background:url(../images/star.gif);
 font:14px/1.75em georgia, serif;
 }
 article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {

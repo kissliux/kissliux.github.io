@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"pa",
+				"padding-left"
+			],
+			[
 				"i",
 				"static"
 			],
@@ -23,7 +27,7 @@
 			"file": "css/screen.css",
 			"settings":
 			{
-				"buffer_size": 10080,
+				"buffer_size": 10339,
 				"line_ending": "Unix"
 			}
 		},
@@ -108,13 +112,10 @@
 			}
 		},
 		{
-			"contents": "		<section id=“about_me”>\n			<h3>About me</h3>\n			<img class=\"block\" src=\"{{ site.baseurl}}images/avatar.jpg\"  alt=\"A picture of ypchen\" />\n			<p>	平生修得随缘性，粗茶淡饭也知足；<br />万事岂能尽人意，但求无愧吾自心；<br />十年河东转河西，莫笑穷人穿破衣；<br />闲谈莫论人是非，静坐常思自已过，<br />地上种菜不长草，心中有善恶不生\n			</p>\n\n			<p>\n			我的心是旷远的鸟，在你的眼中找到了天空！\n			</p>\n		</section>\n",
 			"file": "_includes/about-me.html",
-			"file_size": 418,
-			"file_write_time": 130488679750000000,
 			"settings":
 			{
-				"buffer_size": 312,
+				"buffer_size": 291,
 				"line_ending": "Unix"
 			}
 		},
@@ -264,7 +265,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -273,15 +274,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10080,
+						"buffer_size": 10339,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								9715,
-								9715
+								10313,
+								10313
 							]
 						],
 						"settings":
@@ -290,10 +291,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 9538.0,
+						"translation.y": 9776.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -321,7 +322,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -350,7 +351,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -375,10 +376,10 @@
 							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 125.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -492,7 +493,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -520,7 +521,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
@@ -548,7 +549,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -585,15 +586,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 312,
+						"buffer_size": 291,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14,
-								24
+								26,
+								26
 							]
 						],
 						"settings":
@@ -605,7 +606,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -632,7 +633,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 9,
 					"type": "text"
 				}
 			]

@@ -5,8 +5,10 @@ padding:0;
 article a{
 color: #0f0;
 	}
+	html{
+			background:url(../images/star.gif);
+	}
 body {
-	background:url(../images/star.gif);
 font:14px/1.75em georgia, serif;
 }
 article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {

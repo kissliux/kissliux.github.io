@@ -4,15 +4,17 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>rss Spider,Web crawler | 狂飙蜗牛</title>
+    <title>html5-bootstrap 快速开发模板 | 狂飙蜗牛</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Shane lau">
     
-    <meta name="description" content="Design and coding with all the love in the world by ShaneLau.
-
-fork on github ,I like star. 
-Web crawler, use NodeJs grab the RSS news, fetching the c">
+    <meta name="description" content="简介
+前端开发模板，自动化任务管理。html5 development template, auto task manager
+本项目为笔戈科技开发团队前端开发模板。方便快速进行项目开发，打包发布。
+使用方式
+1
+	git clone https://github.com/kissliux/html">
     
     
     
@@ -72,14 +74,14 @@ Web crawler, use NodeJs grab the RSS news, fetching the c">
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2014/07/07/2014-07-07-rss-spide/" title="rss Spider,Web crawler" itemprop="url">rss Spider,Web crawler</a>
+      <a href="/2014/07/01/html5-template/" title="html5-bootstrap 快速开发模板" itemprop="url">html5-bootstrap 快速开发模板</a>
   </h1>
   <p class="article-author">By
        
 		<a href="http://kissliux.github.io/about" title="Shane lau" target="_blank" itemprop="author">Shane lau</a>
 		
   <p class="article-time">
-    <time datetime="2014-07-07T00:00:00.000Z" itemprop="datePublished">Published Jul 7 2014</time>
+    <time datetime="2014-07-01T00:00:00.000Z" itemprop="datePublished">Published Jul 1 2014</time>
     
   </p>
 </header>
@@ -89,47 +91,113 @@ Web crawler, use NodeJs grab the RSS news, fetching the c">
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#What’s_included"><span class="toc-number">1.</span> <span class="toc-text">What’s included</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Environment"><span class="toc-number">2.</span> <span class="toc-text">Environment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Usage"><span class="toc-number">3.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#index_page"><span class="toc-number">4.</span> <span class="toc-text">index page</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#http://127-0-0-1:8002/list"><span class="toc-number">5.</span> <span class="toc-text">http://127.0.0.1:8002/list</a></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#post_detail_page"><span class="toc-number">6.</span> <span class="toc-text">post detail page</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用方式"><span class="toc-number">2.</span> <span class="toc-text">使用方式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#前端技术"><span class="toc-number">3.</span> <span class="toc-text">前端技术</span></a></li><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#grunt任务："><span class="toc-number">3.1.</span> <span class="toc-text">grunt任务：</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#文档结构"><span class="toc-number">4.</span> <span class="toc-text">文档结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Development"><span class="toc-number">5.</span> <span class="toc-text">Development</span></a></li></ol>
 		
 		</div>
 		
-		<blockquote>
-<p>Design and coding with all the love in the world by ShaneLau.</p>
-</blockquote>
-<p>fork on <a href="https://github.com/kissliux/rssSpider" target="_blank" rel="external">github</a> ,I like star. </p>
-<p>Web crawler, use NodeJs grab the RSS news, fetching the contents of the include title,released time, description, source,content and images . At the same time for the client to provide the standard news service interface.    </p>
-<p>Use nodejs captured above to network news, then insert into mongodb .<br>How the RSS news and links to the url address and grab a summary of the news text and the news pictures For a news client, without pictures is a fatal blow, illustrated to attract users.</p>
-<h2 id="What’s_included">What’s included</h2>
-<p>This project grabbed headlines news source,url,description,images,content.<br>Provide list query and single news query services.</p>
-<h2 id="Environment">Environment</h2>
-<p>nodejs、mongodb</p>
-<h2 id="Usage">Usage</h2>
+		<h1 id="简介">简介</h1>
+<p>前端开发模板，自动化任务管理。html5 development template, auto task manager</p>
+<p>本项目为笔戈科技开发团队前端开发模板。方便快速进行项目开发，打包发布。</p>
+<h1 id="使用方式">使用方式</h1>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>	git <span class="keyword">clone</span> https:<span class="comment">//github.com/kissliux/html-front-template.git</span>
+</pre></td></tr></table></figure>
+
+
+<h1 id="前端技术">前端技术</h1>
+<ul>
+<li>html5</li>
+<li>bootstrap 3 模板</li>
+<li>jquery</li>
+<li>lazyload</li>
+<li>less</li>
+<li>grunt</li>
+<li>bower</li>
+</ul>
+<h2 id="grunt任务：">grunt任务：</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre>grunt.registerTask(<span class="string">'default'</span>, [<span class="string">'less'</span>,<span class="string">'cssmin'</span>,<span class="string">'uglify'</span>,<span class="string">'copy'</span>]);
+ <span class="comment">//执行 grunt bundle --最终输出的文件 &lt; name-生成日期.zip &gt; 文件</span>
+ grunt.registerTask(<span class="string">'bundle'</span>, [<span class="string">'clean:pre'</span>,<span class="string">'less:development'</span>,<span class="string">'copy:images'</span>, <span class="string">'copy:main'</span>,<span class="string">'cssmin'</span>,<span class="string">'copy:archive'</span>, <span class="string">'clean:post'</span>,<span class="string">'htmlmin'</span>,<span class="string">'compress'</span>,]);
+</pre></td></tr></table></figure>
+
+<ul>
+<li>clean 清理文档格式</li>
+<li>less 编译成css</li>
+<li>cssmin css压缩</li>
+<li>uglify js文件压缩</li>
+<li>compress 压缩成 .zip文件</li>
+<li>copy 把所有资源文件拷贝到 build目录，方便项目发布到CDN</li>
+</ul>
+<h1 id="文档结构">文档结构</h1>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
 4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
 </pre></td><td class="code"><pre>
- npm install <span class="operator">-d</span>    
-
- node app.js
+├── Gruntfile.js   <span class="comment">//任务配置</span>
+├── assets			<span class="comment">//静态资源</span>
+│   ├── css			
+│   │   ├── base.less		<span class="comment">//公用样式</span>
+│   │   ├── ie		<span class="comment">//IE兼容性问题解决</span>
+│   │   │   └── <span class="keyword">index</span>-ie.css
+│   │   ├── <span class="keyword">index</span>.css		<span class="comment">//less编译后生成文件</span>
+│   │   ├── <span class="keyword">index</span>.less		<span class="comment">//主页样式</span>
+│   │   └── media			<span class="comment">//媒体查询  响应式</span>
+│   │       └── <span class="keyword">index</span>-media.css
+│   ├── images		<span class="comment">//图片资源</span>
+│   │   ├── favicon.ico
+│   │   └── sprite		<span class="comment">//图片精灵（多个小图放到一张大图里面，减少请求次数）</span>
+│   └── js		<span class="comment">//javascript脚本</span>
+│       ├── base.js		<span class="comment">//公用脚本</span>
+│       └── <span class="keyword">index</span>.js		<span class="comment">//主页脚本</span>
+├── bower.json		<span class="comment">//包管理文件</span>
+├── build		<span class="comment">//打包发布的文件，经过了编译、拼接，压缩等处理后的目录</span>
+├── <span class="keyword">index</span>.html		<span class="comment">//主页</span>
+└── package.json
 </pre></td></tr></table></figure>
 
-<p>spide will begin after five seconds.<br>cpoy to broswer</p>
+<h1 id="Development">Development</h1>
+<p>安装依赖</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
+3
+4
+5
+6
+7
+8
 </pre></td><td class="code"><pre>
- http:<span class="comment">//localhost:8002</span>
+npm <span class="keyword">install</span>
+bower <span class="keyword">install</span>
+
+打包发布
+
+
+grunt
 </pre></td></tr></table></figure>
 
-<p><strong> Test rss : <a href="http://www.163.com/rss" target="_blank" rel="external">http://www.163.com/rss</a> </strong></p>
-<p>if you running successfully, you will see this.</p>
-<p><img src="/images/rssspide/0.png" alt="app"></p>
-<h2 id="index_page">index page</h2>
-<p><img src="/images/rssspide/1.png" alt="rss spide index page "></p>
-<h2 id="http://127-0-0-1:8002/list"><a href="http://127.0.0.1:8002/list" target="_blank" rel="external">http://127.0.0.1:8002/list</a></h2>
-<p><img src="/images/rssspide/2.png" alt="news list"></p>
-<h2 id="post_detail_page">post detail page</h2>
-<p><img src="/images/rssspide/3.png" alt="list "></p>
+
+
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -137,7 +205,7 @@ Web crawler, use NodeJs grab the RSS news, fetching the c">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Development/">Development</a>
+  <span></span> <a href="/tags/html5/">html5</a>
   </div>
 
 
@@ -145,7 +213,7 @@ Web crawler, use NodeJs grab the RSS news, fetching the c">
 
 <div class="article-share" id="share">
 
-  <div data-url="http://kissliux.github.io/2014/07/07/2014-07-07-rss-spide/" data-title="rss Spider,Web crawler | 狂飙蜗牛" data-tsina="null" class="share clearfix">
+  <div data-url="http://kissliux.github.io/2014/07/01/html5-template/" data-title="html5-bootstrap 快速开发模板 | 狂飙蜗牛" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -155,18 +223,18 @@ Web crawler, use NodeJs grab the RSS news, fetching the c">
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2014/07/10/hello-liux/" title="hello liux">
+ <a href="/2014/07/03/clound-standrad/" title="笔戈360云盘文件使用规范">
   <strong>上一篇：</strong><br/>
   <span>
-  hello liux</span>
+  笔戈360云盘文件使用规范</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2014/07/06/2014-07-06-web-front-career-development/"  title="web前端知识构架和职业之路">
+<a href="/2014/06/30/blog-start/"  title="github个人博客上线了">
  <strong>下一篇：</strong><br/> 
- <span>web前端知识构架和职业之路
+ <span>github个人博客上线了
 </span>
 </a>
 </div>
@@ -181,7 +249,7 @@ Web crawler, use NodeJs grab the RSS news, fetching the c">
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#What’s_included"><span class="toc-number">1.</span> <span class="toc-text">What’s included</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Environment"><span class="toc-number">2.</span> <span class="toc-text">Environment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Usage"><span class="toc-number">3.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#index_page"><span class="toc-number">4.</span> <span class="toc-text">index page</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#http://127-0-0-1:8002/list"><span class="toc-number">5.</span> <span class="toc-text">http://127.0.0.1:8002/list</a></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#post_detail_page"><span class="toc-number">6.</span> <span class="toc-text">post detail page</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用方式"><span class="toc-number">2.</span> <span class="toc-text">使用方式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#前端技术"><span class="toc-number">3.</span> <span class="toc-text">前端技术</span></a></li><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#grunt任务："><span class="toc-number">3.1.</span> <span class="toc-text">grunt任务：</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#文档结构"><span class="toc-number">4.</span> <span class="toc-text">文档结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Development"><span class="toc-number">5.</span> <span class="toc-text">Development</span></a></li></ol>
  
   </div>
 
@@ -198,13 +266,13 @@ Web crawler, use NodeJs grab the RSS news, fetching the c">
 		
 			<li><a href="/tags/Development/" title="Development">Development<sup>2</sup></a></li>
 		
-			<li><a href="/tags/html5/" title="html5">html5<sup>1</sup></a></li>
-		
-			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
-		
 			<li><a href="/tags/web/" title="web">web<sup>1</sup></a></li>
 		
+			<li><a href="/tags/html5/" title="html5">html5<sup>1</sup></a></li>
+		
 			<li><a href="/tags/散文/" title="散文">散文<sup>1</sup></a></li>
+		
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
 		
 		</ul>
 </div>

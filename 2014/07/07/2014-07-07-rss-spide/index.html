@@ -4,12 +4,15 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Hello World | 狂飙蜗牛</title>
+    <title>rss Spider,Web crawler | 狂飙蜗牛</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Shane lau">
     
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in ">
+    <meta name="description" content="Design and coding with all the love in the world by ShaneLau.
+
+fork on github ,I like star. 
+Web crawler, use NodeJs grab the RSS news, fetching the c">
     
     
     
@@ -69,14 +72,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2014/07/10/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/2014/07/07/2014-07-07-rss-spide/" title="rss Spider,Web crawler" itemprop="url">rss Spider,Web crawler</a>
   </h1>
   <p class="article-author">By
        
 		<a href="http://kissliux.github.io/about" title="Shane lau" target="_blank" itemprop="author">Shane lau</a>
 		
   <p class="article-time">
-    <time datetime="2014-07-10T14:07:06.000Z" itemprop="datePublished">Published Jul 10 2014</time>
+    <time datetime="2014-07-07T00:00:00.000Z" itemprop="datePublished">Published Jul 7 2014</time>
     
   </p>
 </header>
@@ -86,47 +89,63 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">Contents</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#What’s_included"><span class="toc-number">1.</span> <span class="toc-text">What’s included</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Environment"><span class="toc-number">2.</span> <span class="toc-text">Environment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Usage"><span class="toc-number">3.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#index_page"><span class="toc-number">4.</span> <span class="toc-text">index page</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#http://127-0-0-1:8002/list"><span class="toc-number">5.</span> <span class="toc-text">http://127.0.0.1:8002/list</a></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#post_detail_page"><span class="toc-number">6.</span> <span class="toc-text">post detail page</span></a></li></ol>
 		
 		</div>
 		
-		<p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">trobuleshooting</a> or you can ask me on <a href="https://github.com/tommy351/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo new <span class="string">"My New Post"</span>
+		<blockquote>
+<p>Design and coding with all the love in the world by ShaneLau.</p>
+</blockquote>
+<p>fork on <a href="https://github.com/kissliux/rssSpider" target="_blank" rel="external">github</a> ,I like star. </p>
+<p>Web crawler, use NodeJs grab the RSS news, fetching the contents of the include title,released time, description, source,content and images . At the same time for the client to provide the standard news service interface.    </p>
+<p>Use nodejs captured above to network news, then insert into mongodb .<br>How the RSS news and links to the url address and grab a summary of the news text and the news pictures For a news client, without pictures is a fatal blow, illustrated to attract users.</p>
+<h2 id="What’s_included">What’s included</h2>
+<p>This project grabbed headlines news source,url,description,images,content.<br>Provide list query and single news query services.</p>
+<h2 id="Environment">Environment</h2>
+<p>nodejs、mongodb</p>
+<h2 id="Usage">Usage</h2>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+</pre></td><td class="code"><pre>
+ npm install <span class="operator">-d</span>    
+
+ node app.js
 </pre></td></tr></table></figure>
 
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo server
+<p>spide will begin after five seconds.<br>cpoy to broswer</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>
+ http:<span class="comment">//localhost:8002</span>
 </pre></td></tr></table></figure>
 
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo generate
-</pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo deploy
-</pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<p><strong> Test rss : <a href="http://www.163.com/rss" target="_blank" rel="external">http://www.163.com/rss</a> </strong></p>
+<p>if you running successfully, you will see this.</p>
+<p><img src="/images/rssspide/0.png" alt="app"></p>
+<h2 id="index_page">index page</h2>
+<p><img src="/images/rssspide/1.png" alt="rss spide index page "></p>
+<h2 id="http://127-0-0-1:8002/list"><a href="http://127.0.0.1:8002/list" target="_blank" rel="external">http://127.0.0.1:8002/list</a></h2>
+<p><img src="/images/rssspide/2.png" alt="news list"></p>
+<h2 id="post_detail_page">post detail page</h2>
+<p><img src="/images/rssspide/3.png" alt="list "></p>
   
 	</div>
 		<footer class="article-footer clearfix">
 
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Development/">Development</a>
+  </div>
 
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://kissliux.github.io/2014/07/10/hello-world/" data-title="Hello World | 狂飙蜗牛" data-tsina="null" class="share clearfix">
+  <div data-url="http://kissliux.github.io/2014/07/07/2014-07-07-rss-spide/" data-title="rss Spider,Web crawler | 狂飙蜗牛" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -135,11 +154,19 @@
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2014/07/10/hello-liux/" title="hello liux">
+  <strong>上一篇：</strong><br/>
+  <span>
+  hello liux</span>
+</a>
+</div>
+
 
 <div class="next">
-<a href="/2014/07/10/hello-liux/"  title="hello liux">
+<a href="/2014/07/06/2014-07-06-web-front-career-development/"  title="web前端知识构架和职业之路">
  <strong>下一篇：</strong><br/> 
- <span>hello liux
+ <span>web前端知识构架和职业之路
 </span>
 </a>
 </div>
@@ -154,7 +181,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">Contents</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick_Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create_a_new_post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run_server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate_static_files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy_to_remote_sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#What’s_included"><span class="toc-number">1.</span> <span class="toc-text">What’s included</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Environment"><span class="toc-number">2.</span> <span class="toc-text">Environment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Usage"><span class="toc-number">3.</span> <span class="toc-text">Usage</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#index_page"><span class="toc-number">4.</span> <span class="toc-text">index page</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#http://127-0-0-1:8002/list"><span class="toc-number">5.</span> <span class="toc-text">http://127.0.0.1:8002/list</a></span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#post_detail_page"><span class="toc-number">6.</span> <span class="toc-text">post detail page</span></a></li></ol>
  
   </div>
 

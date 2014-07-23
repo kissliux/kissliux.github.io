@@ -1,0 +1,82 @@
+<hr>
+<p>title: 笔戈博客前端代码和文件说明<br>tags: html<br>comment: true<br>published: true</p>
+<h2 id="date:_2014-07-14">date: 2014-07-14</h2>
+<h1 id="笔戈博客前端代码说明">笔戈博客前端代码说明</h1>
+<p>目录结构说明</p>
+<pre><code>├── LICENSE
+├── README<span class="preprocessor">.md</span>
+├── assets        //资源文件
+│   ├── css        //样式
+│   │   ├── common        //通用样式，被多个页面引用
+│   │   │   ├── base<span class="preprocessor">.css</span>        
+│   │   │   ├── grids-responsive-min<span class="preprocessor">.css</span>
+│   │   │   └── pure<span class="preprocessor">.css</span>
+│   │   ├── ie        //ie兼容性 问题解决
+│   │   │   └── index-ie<span class="preprocessor">.css</span>
+│   │   ├── index<span class="preprocessor">.css</span>        
+│   │   ├── index<span class="preprocessor">.less</span>        后期使用less 改写整个项目
+│   │   ├── media        //媒体查询部分
+│   │   │   ├── index-media<span class="preprocessor">.css</span>
+│   │   │   └── index-media<span class="preprocessor">.less</span>
+│   │   ├── post<span class="preprocessor">.css</span>        //文章界面的样式
+│   │   ├── screen<span class="preprocessor">.css</span>        //当面list界面样式  新版本上线会删掉整个
+│   ├── fonts        //字体和字体图标
+│   ├── images        //图片
+│   ├── js        //脚本文件
+│   │   ├── base<span class="preprocessor">.js</span>        //通用脚本
+│   │   ├── classie<span class="preprocessor">.js</span>        //解决ie问题
+│   │   ├── index<span class="preprocessor">.js</span>
+│   │   ├── index1<span class="preprocessor">.js</span>
+│   │   ├── min        //已经压缩好了的文件
+│   │   │   ├── jquery<span class="preprocessor">.lazyload</span><span class="preprocessor">.min</span><span class="preprocessor">.js</span>
+│   │   │   ├── jquery<span class="preprocessor">.min</span><span class="preprocessor">.js</span>
+│   │   │   └── json2<span class="preprocessor">.js</span>
+│   │   ├── modernizr<span class="preprocessor">.custom</span><span class="preprocessor">.js</span>        
+│   │   ├── post<span class="preprocessor">.js</span>        //文章界面脚本
+│   │   ├── top<span class="preprocessor">.js</span>        //top 功能脚本，需要移到通用脚本中
+│   │   └── video<span class="preprocessor">.js</span>        //视频界面脚本
+│   └── svg
+│       └── filter<span class="preprocessor">.svg</span>
+├── bower<span class="preprocessor">.json</span>
+├── default1<span class="preprocessor">.hbs</span>        //通用界面模板
+├── index<span class="preprocessor">.hbs</span>        //首页
+├── list<span class="preprocessor">.hbs</span>        //当前list 界面，将会被改写
+├── nexus-<span class="number">5</span>-with-flyme-<span class="number">3.</span>html
+├── package<span class="preprocessor">.json</span>
+├── page<span class="preprocessor">.hbs</span>        //无用 删掉
+├── partials        //部分页面   代码
+│   ├── baidu_analysis<span class="preprocessor">.hbs</span>        //百度分析
+│   ├── comment<span class="preprocessor">.hbs</span>        //评论
+│   ├── footer<span class="preprocessor">.hbs</span>        //页脚
+│   ├── menu<span class="preprocessor">.hbs</span>        //菜单
+│   ├── readmore<span class="preprocessor">.hbs</span>        //阅读更多
+│   └── share<span class="preprocessor">.hbs</span>        //百度分析
+├── post<span class="preprocessor">.hbs</span>        //文章界面
+├── post_list<span class="preprocessor">.hbs</span>        //文章列表
+├── tag<span class="preprocessor">.hbs</span>        
+├── video<span class="preprocessor">.hbs</span>        //视频界面
+├── video_list<span class="preprocessor">.hbs</span>
+</code></pre><p>代码使用了模板引擎，handlebars</p>
+<p><a href="https://github.com/barc/express-hbs">express-hbs</a><br><a href="http://handlebarsjs.com/">handlebars</a></p>
+<h3 id="1-模板引用">1.模板引用</h3>
+<p> default.hbs        //通用界面模板<br>所有页面的模板。<br>使用方式: 见post.hbs 第一行</p>
+<pre><code><span class="xml">
+</span><span class="expression">{{!&lt; <span class="variable">default</span>1}}</span><span class="xml">  
+
+表示当前文件引用了 default.hbs 。 本文件内容 填补填充到 default.hbs 的</span><span class="expression">{{{ <span class="variable">body</span> }}</span><span class="xml">} 位置</span>
+</code></pre><h4 id="2-块元素引用">2.块元素引用</h4>
+<p>default1.hbs ：</p>
+<pre><code><span class="xml">   </span><span class="expression">{{{<span class="variable">block</span> <span class="string">"pageStyles"</span>}}</span><span class="xml">}</span>
+</code></pre><p>表示该block 处可以插入 一段代码。<br>post.hbs中：</p>
+<pre><code><span class="xml"></span><span class="expression">{{<span class="begin-block">#contentFor </span><span class="string">"pageStyles"</span>}}</span><span class="xml">
+    <span class="tag">&lt;<span class="title">link</span> <span class="attribute">type</span>=<span class="value">"text/css"</span> <span class="attribute">href</span>=<span class="value">"</span></span></span><span class="expression">{{<span class="variable">asset</span> <span class="string">"css/post.css"</span> <span class="variable">cdn</span>=<span class="string">"true"</span>}}</span><span class="xml"><span class="tag"><span class="value">"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span>/&gt;</span>
+</span><span class="expression">{{<span class="end-block">/contentFor</span>}}</span><span class="xml"></span>
+</code></pre><h3 id="3-_输出后台数据">3. 输出后台数据</h3>
+<pre><code><span class="xml"></span><span class="expression">{{<span class="variable">meta</span>_<span class="variable">title</span>}}</span><span class="xml"> //从后台获取到页面的title</span>
+</code></pre><h3 id="4-代码分块">4.代码分块</h3>
+<p>partials 文件夹中全为部分代码，包括menu,footer。这些代码需要在多个文件中被引用，所以独立出来。<br>default1.hbs文件中：</p>
+<pre><code><span class="xml"> </span><span class="expression">{{&gt; <span class="variable">baidu</span>_<span class="variable">analysis</span>}}</span><span class="xml"></span>
+</code></pre><p>表示引用了 partials/baidu_analysis.hbs 文件</p>
+<h3 id="5-引用静态资源">5.引用静态资源</h3>
+<pre><code><span class="xml"> <span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"shortcut icon"</span> <span class="attribute">href</span>=<span class="value">"</span></span></span><span class="expression">{{<span class="variable">asset</span> <span class="string">"images/favicon.ico"</span> <span class="variable">cdn</span>=<span class="string">"true"</span>}}</span><span class="xml"><span class="tag"><span class="value">"</span>&gt;</span></span>
+</code></pre><p>cdn=”true” 的意思表示这个资源将会引用cdn的地址。 这个不影响我们的开发。</p>

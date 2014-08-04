@@ -4,17 +4,14 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>html5-bootstrap 快速开发模板 | 狂飙蜗牛</title>
+    <title>响应式的嵌入内容和图片 | 狂飙蜗牛</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Shane lau">
     
-    <meta name="description" content="简介
-前端开发模板，自动化任务管理。html5 development template, auto task manager
-本项目为笔戈科技开发团队前端开发模板。方便快速进行项目开发，打包发布。
-使用方式
-1
-	git clone https://github.com/kissliux/html">
+    <meta name="description" content="具有响应式特性的嵌入内容
+根据被嵌入内容的外部容器的宽度，自动创建一个固定的比例，从而让浏览器自动确定视频或 slideshow 的尺寸，能够在各种设备上缩放。
+这些规则被直接应用在 iframe、embed 和 object 元素上。如果你希望让最终样式与其他属性相匹配，还可以明确地使用一个派生出">
     
     
     
@@ -74,14 +71,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2014/07/01/html5-template/" title="html5-bootstrap 快速开发模板" itemprop="url">html5-bootstrap 快速开发模板</a>
+      <a href="/2014/08/03/resonsive-img-object/" title="响应式的嵌入内容和图片" itemprop="url">响应式的嵌入内容和图片</a>
   </h1>
   <p class="article-author">By
        
 		<a href="http://kissliux.github.io/about" title="Shane lau" target="_blank" itemprop="author">Shane lau</a>
 		
   <p class="article-time">
-    <time datetime="2014-07-01T00:00:00.000Z" itemprop="datePublished">发表于 7月 1 2014</time>
+    <time datetime="2014-08-03T03:43:14.000Z" itemprop="datePublished">发表于 8月 3 2014</time>
     
   </p>
 </header>
@@ -91,48 +88,57 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用方式"><span class="toc-number">2.</span> <span class="toc-text">使用方式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#前端技术"><span class="toc-number">3.</span> <span class="toc-text">前端技术</span></a></li><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#grunt任务："><span class="toc-number">3.1.</span> <span class="toc-text">grunt任务：</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#文档结构"><span class="toc-number">4.</span> <span class="toc-text">文档结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Development"><span class="toc-number">5.</span> <span class="toc-text">Development</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#具有响应式特性的嵌入内容"><span class="toc-number">1.</span> <span class="toc-text">具有响应式特性的嵌入内容</span></a></li><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#先看demo"><span class="toc-number">1.1.</span> <span class="toc-text">先看demo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等比缩放的属性，基于padding-"><span class="toc-number">1.2.</span> <span class="toc-text">等比缩放的属性，基于padding.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#具体实现"><span class="toc-number">1.3.</span> <span class="toc-text">具体实现</span></a></li></ol>
 		
 		</div>
 		
-		<h1 id="简介">简介</h1>
-<p>前端开发模板，自动化任务管理。html5 development template, auto task manager</p>
-<p>本项目为笔戈科技开发团队前端开发模板。方便快速进行项目开发，打包发布。</p>
-<h1 id="使用方式">使用方式</h1>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>	git <span class="keyword">clone</span> https:<span class="comment">//github.com/kissliux/html-front-template.git</span>
-</pre></td></tr></table></figure>
-
-
-<h1 id="前端技术">前端技术</h1>
-<ul>
-<li>html5</li>
-<li>bootstrap 3 模板</li>
-<li>jquery</li>
-<li>lazyload</li>
-<li>less</li>
-<li>grunt</li>
-<li>bower</li>
-</ul>
-<h2 id="grunt任务：">grunt任务：</h2>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
+		<h1 id="具有响应式特性的嵌入内容">具有响应式特性的嵌入内容</h1>
+<p>根据被嵌入内容的外部容器的宽度，自动创建一个固定的比例，从而让浏览器自动确定视频或 slideshow 的尺寸，能够在各种设备上缩放。</p>
+<p>这些规则被直接应用在 iframe、embed 和 object 元素上。如果你希望让最终样式与其他属性相匹配，还可以明确地使用一个派生出来的 .embed-responsive-item 类。  </p>
+<p>超级提示： 不需要为 iframe 元素设置 frameborder=”0” 属性，因为我们已经替你这样做了！</p>
+<h2 id="先看demo">先看demo</h2>
+<h2 id="等比缩放的属性，基于padding-">等比缩放的属性，基于padding.</h2>
+<p>padding的可选参数 ，  % 为父元素的宽度百分比 padding-bottom:50%; 即变成了 2比1的比例了</p>
+<table>
+<thead>
+<tr>
+<th>值</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>auto</td>
+<td>浏览器计算内边距。</td>
+</tr>
+<tr>
+<td>length</td>
+<td>规定以具体单位计的内边距值，比如像素、厘米等。默认值是 0px。</td>
+</tr>
+<tr>
+<td>%</td>
+<td>规定基于父元素的宽度的百分比的内边距。</td>
+</tr>
+<tr>
+<td>inherit</td>
+<td>规定应该从父元素继承内边距。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="具体实现">具体实现</h2>
+<p>16比9的大小</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre>1
 2
 3
-</pre></td><td class="code"><pre>grunt.registerTask(<span class="string">'default'</span>, [<span class="string">'less'</span>,<span class="string">'cssmin'</span>,<span class="string">'uglify'</span>,<span class="string">'copy'</span>]);
- <span class="comment">//执行 grunt bundle --最终输出的文件 &lt; name-生成日期.zip &gt; 文件</span>
- grunt.registerTask(<span class="string">'bundle'</span>, [<span class="string">'clean:pre'</span>,<span class="string">'less:development'</span>,<span class="string">'copy:images'</span>, <span class="string">'copy:main'</span>,<span class="string">'cssmin'</span>,<span class="string">'copy:archive'</span>, <span class="string">'clean:post'</span>,<span class="string">'htmlmin'</span>,<span class="string">'compress'</span>,]);
+4
+</pre></td><td class="code"><pre><span class="comment">&lt;!-- 16:9 aspect ratio --&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"embed-responsive embed-responsive-youku"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">iframe</span> <span class="attribute">class</span>=<span class="value">"embed-responsive-item"</span> <span class="attribute">src</span>=<span class="value">"http://player.youku.com/embed/XNzQ0NzIzOTM2"</span> <span class="attribute">frameborder</span>=<span class="value">0</span> <span class="attribute">allowfullscreen</span>&gt;</span><span class="tag">&lt;/<span class="title">iframe</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 </pre></td></tr></table></figure>
 
-<ul>
-<li>clean 清理文档格式</li>
-<li>less 编译成css</li>
-<li>cssmin css压缩</li>
-<li>uglify js文件压缩</li>
-<li>compress 压缩成 .zip文件</li>
-<li>copy 把所有资源文件拷贝到 build目录，方便项目发布到CDN</li>
-</ul>
-<h1 id="文档结构">文档结构</h1>
-<figure class="highlight"><table><tr><td class="gutter"><pre>1
+<p>LESS代码</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -153,48 +159,65 @@
 19
 20
 21
-</pre></td><td class="code"><pre>
-├── Gruntfile.js   <span class="comment">//任务配置</span>
-├── assets			<span class="comment">//静态资源</span>
-│   ├── css			
-│   │   ├── base.less		<span class="comment">//公用样式</span>
-│   │   ├── ie		<span class="comment">//IE兼容性问题解决</span>
-│   │   │   └── <span class="keyword">index</span>-ie.css
-│   │   ├── <span class="keyword">index</span>.css		<span class="comment">//less编译后生成文件</span>
-│   │   ├── <span class="keyword">index</span>.less		<span class="comment">//主页样式</span>
-│   │   └── media			<span class="comment">//媒体查询  响应式</span>
-│   │       └── <span class="keyword">index</span>-media.css
-│   ├── images		<span class="comment">//图片资源</span>
-│   │   ├── favicon.ico
-│   │   └── sprite		<span class="comment">//图片精灵（多个小图放到一张大图里面，减少请求次数）</span>
-│   └── js		<span class="comment">//javascript脚本</span>
-│       ├── base.js		<span class="comment">//公用脚本</span>
-│       └── <span class="keyword">index</span>.js		<span class="comment">//主页脚本</span>
-├── bower.json		<span class="comment">//包管理文件</span>
-├── build		<span class="comment">//打包发布的文件，经过了编译、拼接，压缩等处理后的目录</span>
-├── <span class="keyword">index</span>.html		<span class="comment">//主页</span>
-└── package.json
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+</pre></td><td class="code"><pre><span class="class">.embed-responsive</span> {
+  <span class="attribute">position</span><span class="value">: relative;</span>
+  <span class="attribute">display</span><span class="value">: block;</span>
+  <span class="attribute">height</span><span class="value">: <span class="number">0</span>;</span>
+  <span class="attribute">padding</span><span class="value">: <span class="number">0</span>;</span>
+  <span class="attribute">overflow</span><span class="value">: hidden;</span>
+
+  <span class="class">.embed-responsive-item</span>,
+  <span class="tag">iframe</span>,
+  <span class="tag">embed</span>,
+  <span class="tag">object</span> {
+    <span class="attribute">position</span><span class="value">: absolute;</span>
+    <span class="attribute">top</span><span class="value">: <span class="number">0</span>;</span>
+    <span class="attribute">left</span><span class="value">: <span class="number">0</span>;</span>
+    <span class="attribute">bottom</span><span class="value">: <span class="number">0</span>;</span>
+    <span class="attribute">height</span><span class="value">: <span class="number">100</span>%;</span>
+    <span class="attribute">width</span><span class="value">: <span class="number">100</span>%;</span>
+    <span class="attribute">border</span><span class="value">: <span class="number">0</span>;</span>
+  }
+
+  <span class="comment">// Modifier class for 16:9 aspect ratio</span>
+  &<span class="class">.embed-responsive-16by9</span> {
+    <span class="attribute">padding-bottom</span><span class="value">: <span class="number">56.25</span>%;</span>
+  }
+  &<span class="class">.embed-responsive-2by1</span> {
+    <span class="attribute">padding-bottom</span><span class="value">: <span class="number">50</span>%;</span>
+  }
+  &<span class="class">.embed-responsive-4by3</span> {
+    <span class="attribute">padding-bottom</span><span class="value">: <span class="number">75</span>%;</span>
+  }
+  &<span class="class">.embed-responsive-youku</span>{
+    <span class="attribute">padding-bottom</span><span class="value">: percentage(<span class="number">524</span>/<span class="number">860</span>);</span>
+  }
+}
 </pre></td></tr></table></figure>
 
-<h1 id="Development">Development</h1>
-<p>安装依赖</p>
+<p>等比缩放图片</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
 4
-5
-6
-7
-8
 </pre></td><td class="code"><pre>
-npm <span class="keyword">install</span>
-bower <span class="keyword">install</span>
-
-打包发布
-
-
-grunt
-</pre></td></tr></table></figure>
+&lt;<span class="keyword">div</span> <span class="type">class</span>=<span class="string">"embed-responsive embed-responsive-2by1"</span>&gt;
+    &lt;img <span class="type">class</span>=<span class="string">"embed-responsive-item"</span> src=<span class="string">"assets/images/b.jpg"</span>&gt;
+&lt;/<span class="keyword">div</span>&gt;
+</pre></td></tr></table></figure> 
 
 
 
@@ -205,7 +228,7 @@ grunt
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/html5/">html5</a>
+  <span></span> <a href="/tags/css3/">css3</a>
   </div>
 
 
@@ -213,7 +236,7 @@ grunt
 
 <div class="article-share" id="share">
 
-  <div data-url="http://kissliux.github.io/2014/07/01/html5-template/" data-title="html5-bootstrap 快速开发模板 | 狂飙蜗牛" data-tsina="null" class="share clearfix">
+  <div data-url="http://kissliux.github.io/2014/08/03/resonsive-img-object/" data-title="响应式的嵌入内容和图片 | 狂飙蜗牛" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -222,19 +245,11 @@ grunt
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2014/07/03/clound-standrad/" title="笔戈360云盘文件使用规范">
-  <strong>上一篇：</strong><br/>
-  <span>
-  笔戈360云盘文件使用规范</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2014/06/30/blog-start/"  title="github个人博客上线了">
+<a href="/2014/07/23/bigertech-blog-first/"  title="笔戈博客：主页上线项目总结">
  <strong>下一篇：</strong><br/> 
- <span>github个人博客上线了
+ <span>笔戈博客：主页上线项目总结
 </span>
 </a>
 </div>
@@ -249,7 +264,7 @@ grunt
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用方式"><span class="toc-number">2.</span> <span class="toc-text">使用方式</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#前端技术"><span class="toc-number">3.</span> <span class="toc-text">前端技术</span></a></li><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#grunt任务："><span class="toc-number">3.1.</span> <span class="toc-text">grunt任务：</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#文档结构"><span class="toc-number">4.</span> <span class="toc-text">文档结构</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Development"><span class="toc-number">5.</span> <span class="toc-text">Development</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#具有响应式特性的嵌入内容"><span class="toc-number">1.</span> <span class="toc-text">具有响应式特性的嵌入内容</span></a></li><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#先看demo"><span class="toc-number">1.1.</span> <span class="toc-text">先看demo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等比缩放的属性，基于padding-"><span class="toc-number">1.2.</span> <span class="toc-text">等比缩放的属性，基于padding.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#具体实现"><span class="toc-number">1.3.</span> <span class="toc-text">具体实现</span></a></li></ol>
  
   </div>
 

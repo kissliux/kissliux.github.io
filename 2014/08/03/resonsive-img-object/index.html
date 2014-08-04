@@ -88,7 +88,7 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#具有响应式特性的嵌入内容"><span class="toc-number">1.</span> <span class="toc-text">具有响应式特性的嵌入内容</span></a></li><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#先看demo"><span class="toc-number">1.1.</span> <span class="toc-text">先看demo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等比缩放的属性，基于padding-"><span class="toc-number">1.2.</span> <span class="toc-text">等比缩放的属性，基于padding.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#具体实现"><span class="toc-number">1.3.</span> <span class="toc-text">具体实现</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#具有响应式特性的嵌入内容"><span class="toc-number">1.</span> <span class="toc-text">具有响应式特性的嵌入内容</span></a></li><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#先看demo"><span class="toc-number">1.1.</span> <span class="toc-text">先看demo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等比缩放的属性，基于padding-"><span class="toc-number">1.2.</span> <span class="toc-text">等比缩放的属性，基于padding.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#具体实现"><span class="toc-number">1.3.</span> <span class="toc-text">具体实现</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#等比缩放图片"><span class="toc-number">1.3.1.</span> <span class="toc-text">等比缩放图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#响应式图片"><span class="toc-number">1.3.2.</span> <span class="toc-text">响应式图片</span></a></li></ol>
 		
 		</div>
 		
@@ -139,7 +139,7 @@
 </pre></td></tr></table></figure>
 
 <p>LESS代码</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre>1
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
 4
@@ -168,48 +168,38 @@
 27
 28
 29
-30
-31
-32
-33
-34
-</pre></td><td class="code"><pre><span class="class">.embed-responsive</span> {
-  <span class="attribute">position</span><span class="value">: relative;</span>
-  <span class="attribute">display</span><span class="value">: block;</span>
-  <span class="attribute">height</span><span class="value">: <span class="number">0</span>;</span>
-  <span class="attribute">padding</span><span class="value">: <span class="number">0</span>;</span>
-  <span class="attribute">overflow</span><span class="value">: hidden;</span>
-
-  <span class="class">.embed-responsive-item</span>,
-  <span class="tag">iframe</span>,
-  <span class="tag">embed</span>,
-  <span class="tag">object</span> {
-    <span class="attribute">position</span><span class="value">: absolute;</span>
-    <span class="attribute">top</span><span class="value">: <span class="number">0</span>;</span>
-    <span class="attribute">left</span><span class="value">: <span class="number">0</span>;</span>
-    <span class="attribute">bottom</span><span class="value">: <span class="number">0</span>;</span>
-    <span class="attribute">height</span><span class="value">: <span class="number">100</span>%;</span>
-    <span class="attribute">width</span><span class="value">: <span class="number">100</span>%;</span>
-    <span class="attribute">border</span><span class="value">: <span class="number">0</span>;</span>
-  }
-
-  <span class="comment">// Modifier class for 16:9 aspect ratio</span>
-  &<span class="class">.embed-responsive-16by9</span> {
-    <span class="attribute">padding-bottom</span><span class="value">: <span class="number">56.25</span>%;</span>
-  }
-  &<span class="class">.embed-responsive-2by1</span> {
-    <span class="attribute">padding-bottom</span><span class="value">: <span class="number">50</span>%;</span>
-  }
-  &<span class="class">.embed-responsive-4by3</span> {
-    <span class="attribute">padding-bottom</span><span class="value">: <span class="number">75</span>%;</span>
-  }
-  &<span class="class">.embed-responsive-youku</span>{
-    <span class="attribute">padding-bottom</span><span class="value">: percentage(<span class="number">524</span>/<span class="number">860</span>);</span>
-  }
-}
+</pre></td><td class="code"><pre>
+<span class="class">.embed-responsive</span> <span class="rules">{
+    <span class="rule"><span class="attribute">position</span>:<span class="value">relative</span></span>;
+    <span class="rule"><span class="attribute">display</span>:<span class="value">block</span></span>;
+    <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">0</span></span></span>;
+    <span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">0</span></span></span>;
+    <span class="rule"><span class="attribute">overflow</span>:<span class="value">hidden
+</span></span></span>}
+<span class="class">.embed-responsive</span> <span class="class">.embed-responsive-item</span>, <span class="class">.embed-responsive</span> <span class="tag">iframe</span>, <span class="class">.embed-responsive</span> <span class="tag">embed</span>, <span class="class">.embed-responsive</span> <span class="tag">object</span> <span class="rules">{
+    <span class="rule"><span class="attribute">position</span>:<span class="value">absolute</span></span>;
+    <span class="rule"><span class="attribute">top</span>:<span class="value"><span class="number">0</span></span></span>;
+    <span class="rule"><span class="attribute">left</span>:<span class="value"><span class="number">0</span></span></span>;
+    <span class="rule"><span class="attribute">bottom</span>:<span class="value"><span class="number">0</span></span></span>;
+    <span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">100</span>%</span></span>;
+    <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100</span>%</span></span>;
+    <span class="rule"><span class="attribute">border</span>:<span class="value"><span class="number">0</span>
+</span></span></span>}
+<span class="class">.embed-responsive</span><span class="class">.embed-responsive-16by9</span> <span class="rules">{
+    <span class="rule"><span class="attribute">padding-bottom</span>:<span class="value"><span class="number">56.25</span>%
+</span></span></span>}
+<span class="class">.embed-responsive</span><span class="class">.embed-responsive-2by1</span> <span class="rules">{
+    <span class="rule"><span class="attribute">padding-bottom</span>:<span class="value"><span class="number">50</span>%
+</span></span></span>}
+<span class="class">.embed-responsive</span><span class="class">.embed-responsive-4by3</span> <span class="rules">{
+    <span class="rule"><span class="attribute">padding-bottom</span>:<span class="value"><span class="number">75</span>%
+</span></span></span>}
+<span class="class">.embed-responsive</span><span class="class">.embed-responsive-youku</span> <span class="rules">{
+    <span class="rule"><span class="attribute">padding-bottom</span>:<span class="value"><span class="number">60.93023256</span>%
+</span></span></span>}
 </pre></td></tr></table></figure>
 
-<p>等比缩放图片</p>
+<h3 id="等比缩放图片">等比缩放图片</h3>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
@@ -221,7 +211,18 @@
 </pre></td></tr></table></figure> 
 
 
-
+<h3 id="响应式图片">响应式图片</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+</pre></td><td class="code"><pre><span class="class">.pure-img</span> <span class="rules">{
+    <span class="rule"><span class="attribute">max-width</span>:<span class="value"> <span class="number">100</span>%</span></span>;
+    <span class="rule"><span class="attribute">height</span>:<span class="value"> auto</span></span>;
+    <span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;
+<span class="rule">}</span></span>
+</pre></td></tr></table></figure>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -265,7 +266,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#具有响应式特性的嵌入内容"><span class="toc-number">1.</span> <span class="toc-text">具有响应式特性的嵌入内容</span></a></li><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#先看demo"><span class="toc-number">1.1.</span> <span class="toc-text">先看demo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等比缩放的属性，基于padding-"><span class="toc-number">1.2.</span> <span class="toc-text">等比缩放的属性，基于padding.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#具体实现"><span class="toc-number">1.3.</span> <span class="toc-text">具体实现</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#具有响应式特性的嵌入内容"><span class="toc-number">1.</span> <span class="toc-text">具有响应式特性的嵌入内容</span></a></li><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#先看demo"><span class="toc-number">1.1.</span> <span class="toc-text">先看demo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#等比缩放的属性，基于padding-"><span class="toc-number">1.2.</span> <span class="toc-text">等比缩放的属性，基于padding.</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#具体实现"><span class="toc-number">1.3.</span> <span class="toc-text">具体实现</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#等比缩放图片"><span class="toc-number">1.3.1.</span> <span class="toc-text">等比缩放图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#响应式图片"><span class="toc-number">1.3.2.</span> <span class="toc-text">响应式图片</span></a></li></ol>
  
   </div>
 
